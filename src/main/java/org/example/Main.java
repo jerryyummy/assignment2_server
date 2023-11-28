@@ -1,7 +1,11 @@
 package org.example;
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+import org.example.queue.Consumer;
+
+public class Main extends Thread{
+
+    public static void main(String[] args) throws Exception {
+        Consumer consumer = new Consumer();
+        consumer.consume();
     }
 }
